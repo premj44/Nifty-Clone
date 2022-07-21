@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+}
+.hi{
+margin-top: 14px;
+}
+.cl{
+  margin-bottom: 40px;
+  font-size: 14px;
+  color: #8b99ad;
+  font-weight: 600;
+  letter-spacing: .15em;
+}
+.divv{
+  margin-top: -30px; 
+  position: absolute;
+  left: 50%;
+  width: 1px;
+  height: 52px;
+  background-image: linear-gradient(transparent,#c4c8e2);
+}
+.span{
+  color: #00baab;
+  font-weight: 700;
+}
+.div2{
+  margin-top: 80px; 
+  position: absolute;
+  left: 50%;
+  width: 1px;
+  height: 52px;
+  background-image: linear-gradient(transparent,#c4c8e2);
+}
+.dot{
+  color: #6ed3e0ea;
+  margin: 1px;
+}
+.ic1{
+  position: absolute;
+  margin-top: 1px;
+  margin-left: -215px;
+}
