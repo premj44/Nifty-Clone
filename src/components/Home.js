@@ -1,7 +1,9 @@
-import { Box, Button, Flex, Heading, HStack, Image, Input, SimpleGrid, Spacer, Stack, Text } from "@chakra-ui/react"
+import { Box, Button, Container, Flex, Heading, HStack, Image, Input, Link, SimpleGrid, Spacer, Stack, Text } from "@chakra-ui/react"
 import React from "react"
 import "../App.css"
 import { CheckCircleIcon } from '@chakra-ui/icons'
+import Footer from "./Footer"
+
 
 export default function Home() {
 
@@ -105,7 +107,7 @@ export default function Home() {
 
                 <Flex m={"auto"} width="90%">
 
-                    <Box w={"70%"} ml={-90} mt={20} p={10}>
+                    <Container w={"70%"} ml={-90} mt={20} p={10}>
                         <Heading mr={260} mt={50}>Product</Heading>
                         <Text justifyItems={"start"} color={"gray.700"} mt={2} fontSize={"18px"}>Build better products with team alignment. Create
                             <br />
@@ -118,7 +120,7 @@ export default function Home() {
                             <span className="ic1"><CheckCircleIcon w={4} h={4} color="#00baab" /></span><p>Automate ticket assignments with status assignees</p>
                             <span className="ic1"><CheckCircleIcon w={4} h={4} color="#00baab" /></span><p>Plan project timelines & deployments using Roadmaps</p>
                         </div>
-                    </Box>
+                    </Container>
 
                     <Spacer />
 
@@ -130,26 +132,37 @@ export default function Home() {
                 <Box    >
                 </Box>
             </Box>
-                                        {/* Box 2 complete */}
-                                         {/* Box 3 start */}
+            {/* Box 2 complete */}
+            {/* Box 3 start */}
 
-            <Box mt={20} p={75} w='100%' h='430px' bgGradient='linear(to-br, blue.100, pink.100)'>
+            <Box mt={20} p={75} w='100%' bgGradient='linear(to-br, blue.100, pink.100)'>
 
-                      <Box mt={50} p={10} m={"auto"} borderRadius={20}  w='83%' h='300px' bgGradient='linear(red.100 5%, orange.100 25%, yellow.100 50%)'>
-                                   <div style={{marginLeft:"50%",marginTop:"25px"}}>
-                                    <img width={"70px"} src="https://www.pngarts.com/files/12/Apostrophe-Icon-PNG-Image-Background.png"/>
-                                   </div>
+                <Box mt={50} p={10} m={"auto"} borderRadius={20} w='83%' bgGradient='linear(red.100 5%, orange.100 25%, yellow.100 50%)'>
+                    <div style={{ marginLeft: "50%", marginTop: "20px", marginBottom: "40px" }}>
+                        <img width={"70px"} src="https://www.pngarts.com/files/12/Apostrophe-Icon-PNG-Image-Background.png" />
+                    </div>
+                    <div className="review_div">
+                        Nifty is by far the best productivity tool I've ever used.
+                        They have consolidated so many tools down to one for my team,
+                        without compromising the experience.
+                    </div>
+                    <div>
+                        <p style={{ marginTop: "45px", fontWeight: "700" }}>RIM N. KAY</p>
+                        <p style={{ color: "gray", fontWeight: "bold" }}>ENGINEERING LEAD, EMOVIS</p>
+                    </div>
 
-
-                            </Box> 
-
-                
+                </Box>
+                <Box mt={35} fontSize={20} color={"#00baab"} >
+                    <Link >Read more Netlify reviews on G2 > </Link>
+                </Box>
+                {/* Box 3 complete */}
             </Box>
-                      {/* Box 3 complete */}
+
+            <div className="div2"></div>
+            <Text color={"#6c729c"} mt={170} fontWeight="600">POWERFUL UNIFICATION</Text>
+
+           <Footer/>
+
         </Box>
-
-
-
-    )
-
-}
+    );
+};

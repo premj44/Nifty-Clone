@@ -1,42 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@400;500;600;700;800&family=Merriweather:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto:wght@500&display=swap');
+
 .App {
   text-align: center;
 }
-.hi{
-margin-top: 14px;
+
+.hi {
+  margin-top: 14px;
 }
-.cl{
+
+.cl {
   margin-bottom: 40px;
   font-size: 14px;
   color: #8b99ad;
   font-weight: 600;
   letter-spacing: .15em;
 }
-.divv{
-  margin-top: -30px; 
+
+.divv {
+  margin-top: -30px;
   position: absolute;
   left: 50%;
   width: 1px;
   height: 52px;
-  background-image: linear-gradient(transparent,#c4c8e2);
+  background-image: linear-gradient(transparent, #c4c8e2);
 }
-.span{
+
+.span {
   color: #00baab;
   font-weight: 700;
 }
-.div2{
-  margin-top: 80px; 
+
+.div2 {
+  margin-top: 80px;
   position: absolute;
   left: 50%;
   width: 1px;
   height: 52px;
-  background-image: linear-gradient(transparent,#c4c8e2);
+  background-image: linear-gradient(transparent, #c4c8e2);
 }
-.dot{
+
+.dot {
   color: #6ed3e0ea;
   margin: 1px;
 }
-.ic1{
+
+.ic1 {
   position: absolute;
   margin-top: 1px;
   margin-left: -215px;
+}
+
+.review_div {
+  width: 790px;
+  margin: auto;
+  font-size: 40px;
+  margin-top: 20px;
+  font-family: 'Dancing Script', cursive;
+}
+.linkk{
+  margin-top: 25px;
+
 }
