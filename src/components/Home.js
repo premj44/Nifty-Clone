@@ -3,13 +3,15 @@ import React from "react"
 import "../App.css"
 import { CheckCircleIcon } from '@chakra-ui/icons'
 import Footer from "./Footer"
-
+import { FaAngleRight } from "react-icons/fa";
+import Navbar from "./Navbar"
 
 export default function Home() {
 
     return (
 
         <Box >
+            <Navbar/>
             <Box bgColor={"#f4f6fa"} p={2}>
                 <Box borderRadius='10px' p={3} bgColor={"gray.200"} mt={15} ml={270} w={800} >
                     <Image borderRadius='10px' width={799} height={230} src='https://niftypm.com/_nuxt/img/large@1x.8a3e5ad.webp' />
@@ -79,7 +81,7 @@ export default function Home() {
                 <Heading mt={50}>Collaborate on Tasks</Heading>
                 <Text color={"gray.700"} mt={5} fontSize={"18px"}>Flexibly organize, prioritize, and track daily work with a high level of detail using
                     <br />
-                    Kanban, List, Timeline, Calendar, and Swimlane views. <span className="span">Learn more > </span> </Text>
+                    Kanban, List, Timeline, Calendar, and Swimlane views. <span className="span">Learn more <FaAngleRight/> </span> </Text>
 
                 <Box m={"auto"} mt={50} w={"80%"} >
                     <Image borderRadius='10px' width={"100%"} src='https://niftypm.com/_nuxt/img/large@1x.e2a66e9.webp' />
@@ -91,7 +93,7 @@ export default function Home() {
                 <Image position={"absolute"} width={"18px"} ml={530} mt={4} src="https://niftypm.com/_nuxt/img/nifty-logo-compact.ab551d5.svg" />
                 <Button color={"#00baab"} borderBottomRadius={13} bg={"none"} h={"50px"} width={"92.1%"} border={"1px solid rgba(196,200,226,.5)"}>
                 
-                     Try Nifty now. Thank us later >
+                     Try Nifty now. Thank us later <FaAngleRight style={{position:"relative",margin:"10px",marginTop:"12px"}}/>
                 </Button>
             </Box>
             <div className="div2"></div>
@@ -153,7 +155,7 @@ export default function Home() {
 
                 </Box>
                 <Box mt={35} fontSize={20} color={"#00baab"} >
-                    <Link >Read more Netlify reviews on G2 > </Link>
+                 <Link >Read more Netlify reviews on G2 </Link> <FaAngleRight style={{position:"relative",marginLeft:"47rem",marginTop:"-1.5rem"}}/> 
                 </Box>
                 {/* Box 3 complete */}
             </Box>

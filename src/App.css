@@ -61,3 +61,15 @@
   margin-top: 25px;
 
 }
+#th:hover{
+  cursor: pointer;
+  color: #00baab;
+}
+ 
+.icon:hover{
+  color: #00baab;
+}
+  
+#navhover:hover{
+  color: #00baab;
+}
