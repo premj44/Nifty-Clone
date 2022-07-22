@@ -1,4 +1,8 @@
 import { Box, Text, HStack, Link, Spacer, Table, TableContainer, Tbody, Th, Thead, Tr } from "@chakra-ui/react";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 import "../App.css"
 
 export default function Footer() {
@@ -8,22 +12,22 @@ export default function Footer() {
             <hr style={{ marginTop: "25px" }} />
             <HStack ml={"35%"} mt={10} spacing='24px'>
                 <Box w='70px' h='40px' bg='yellow.200'>
-                    <img src="https://niftypm.com/_nuxt/img/medal-2651.78561c1.svg" />
+                    <img id="th" src="https://niftypm.com/_nuxt/img/medal-2651.78561c1.svg" />
                 </Box>
                 <Box w='70px' h='40px' bg='tomato'>
-                    <img src="https://niftypm.com/_nuxt/img/medal-2671.abe8328.svg" />
+                    <img id="th" src="https://niftypm.com/_nuxt/img/medal-2671.abe8328.svg" />
                 </Box>
                 <Box w='70px' h='40px' bg='pink.100'>
-                    <img src="https://niftypm.com/_nuxt/img/medal-2659.521cffc.svg" />
+                    <img id="th" src="https://niftypm.com/_nuxt/img/medal-2659.521cffc.svg" />
                 </Box>
                 <Box w='70px' h='40px' bg='pink.100'>
-                    <img src="https://niftypm.com/_nuxt/img/medal-2696.defc16a.svg" />
+                    <img id="th" src="https://niftypm.com/_nuxt/img/medal-2696.defc16a.svg" />
                 </Box>
                 <Box w='70px' h='40px' bg='pink.100'>
-                    <img src="https://niftypm.com/_nuxt/img/medal-2640.333478a.svg" />
+                    <img id="th" src="https://niftypm.com/_nuxt/img/medal-2640.333478a.svg" />
                 </Box>
                 <Box w='70px' h='40px' bg='pink.100'>
-                    <img src="https://niftypm.com/_nuxt/img/users-love-us.a93e7d7.svg" />
+                    <img id="th" src="https://niftypm.com/_nuxt/img/users-love-us.a93e7d7.svg" />
                 </Box>
             </HStack>
             <Box p={10}>
@@ -37,93 +41,85 @@ export default function Footer() {
                 <Table >
                     <Thead>
                         <Tr>
-                            <Th color='#00baab'>PRODUCT</Th>
-                            <Th color='#00baab'>RESOURCES</Th>
-                            <Th color='#00baab'>TRUST</Th>
-                            <Th color='#00baab'>MADE FOR</Th>
-                            <Th color='#00baab'>COMPARISIONS</Th>
-                            <Th color='#00baab'>BLOG</Th>
+                            <Th id="th" color='#00baab'>PRODUCT</Th>
+                            <Th id="th" color='#00baab'>RESOURCES</Th>
+                            <Th id="th" color='#00baab'>TRUST</Th>
+                            <Th id="th" color='#00baab'>MADE FOR</Th>
+                            <Th id="th" color='#00baab'>COMPARISIONS</Th>
+                            <Th id="th" color='#00baab'>BLOG</Th>
                         </Tr>
                     </Thead>
                     <Tbody>
                         <Tr>
-                            <Th>Discussions</Th>
-                            <Th>Blog</Th>
-                            <Th>To convert</Th>
-                            <Th>Agile Development</Th>
-                            <Th>Airtable Alternative</Th>
-                            <Th>Why project management is
+                            <Th id="th">Discussions</Th>
+                            <Th id="th">Blog</Th>
+                            <Th id="th" >To convert</Th>
+                            <Th id="th">Agile Development</Th>
+                            <Th id="th">Airtable Alternative</Th>
+                            <Th id="th">Why project management is
                                 <br />
                                 broken (& how to fix it!)</Th>
                         </Tr>
                         <Tr>
-                            <Th>Milestones</Th>
-                            <Th>Change Log</Th>
-                            <Th>Privacy</Th>
-                            <Th>Client Management</Th>
-                            <Th>Asana Alternative</Th>
-                            <Th>Why Remote Collaboration is
+                            <Th id="th">Milestones</Th>
+                            <Th id="th">Change Log</Th>
+                            <Th id="th">Privacy</Th>
+                            <Th id="th">Client Management</Th>
+                            <Th id="th">Asana Alternative</Th>
+                            <Th id="th">Why Remote Collaboration is
                                 <br />
                                 more than just Communication</Th>
                         </Tr>
                         <Tr>
-                            <Th>Tasks</Th>
-                            <Th>Integrations</Th>
-                            <Th>Terms of Use</Th>
-                            <Th>Digital Agencies</Th>
-                            <Th>Basecamp Alternative</Th>
-                            <Th>Staying on top of your
+                            <Th id="th">Tasks</Th>
+                            <Th id="th">Integrations</Th>
+                            <Th id="th">Terms of Use</Th>
+                            <Th id="th">Digital Agencies</Th>
+                            <Th id="th">Basecamp Alternative</Th>
+                            <Th id="th">Staying on top of your
                                 <br />
                                 workloads with time tracking</Th>
                         </Tr>
                         <Tr>
-                            <Th>Docs & Files</Th>
-                            <Th>Apps</Th>
-                            <Th>Security</Th>
-                            <Th>Legal Case Management</Th>
-                            <Th>Clarizen Alternative</Th>
-                            <Th>Best Legal Case Management
+                            <Th id="th">Docs & Files</Th>
+                            <Th id="th">Apps</Th>
+                            <Th id="th">Security</Th>
+                            <Th id="th">Legal Case Management</Th>
+                            <Th id="th">Clarizen Alternative</Th>
+                            <Th id="th">Best Legal Case Management
                                 <br />
                                 Software for Law Firms</Th>
                         </Tr>
                         <Tr>
-                            <Th>Time Tracking</Th>
-                            <Th>Pricing</Th>
-                            <Th>Status</Th>
-                            <Th>Marketing Teams</Th>
-                            <Th>ClickUp Alternative</Th>
+                            <Th id="th">Time Tracking</Th>
+                            <Th id="th">Pricing</Th>
+                            <Th id="th">Status</Th>
+                            <Th id="th">Marketing Teams</Th>
+                            <Th id="th">ClickUp Alternative</Th>
                             <Th></Th>
                         </Tr>
                         <Tr>
-                            <Th>Reporting</Th>
-                            <Th>Affiliates</Th>
-                            <Th></Th>
-                            <Th>Product Teams</Th>
-                            <Th>Confluence Alternative</Th>
-                            <Th></Th>
-                        </Tr>
-                        <Tr>
-                            <Th>Project Home</Th>
-                            <Th></Th>
-                            <Th></Th>
-                            <Th></Th>
-                            <Th>Flow Alternative</Th>
+                            <Th id="th">Reporting</Th>
+                            <Th id="th">Affiliates</Th>
+                            <Th id="th"></Th>
+                            <Th id="th">Product Teams</Th>
+                            <Th id="th">Confluence Alternative</Th>
                             <Th></Th>
                         </Tr>
                         <Tr>
-                            <Th>Project Portfolios</Th>
+                            <Th id="th">Project Home</Th>
                             <Th></Th>
                             <Th></Th>
                             <Th></Th>
-                            <Th>Hive Alternative</Th>
+                            <Th id="th">Flow Alternative</Th>
                             <Th></Th>
                         </Tr>
                         <Tr>
+                            <Th id="th">Project Portfolios</Th>
                             <Th></Th>
                             <Th></Th>
                             <Th></Th>
-                            <Th></Th>
-                            <Th>JIRA Alternative</Th>
+                            <Th id="th">Hive Alternative</Th>
                             <Th></Th>
                         </Tr>
                         <Tr>
@@ -131,7 +127,15 @@ export default function Footer() {
                             <Th></Th>
                             <Th></Th>
                             <Th></Th>
-                            <Th>Monday.com Alternative</Th>
+                            <Th id="th">JIRA Alternative</Th>
+                            <Th></Th>
+                        </Tr>
+                        <Tr>
+                            <Th></Th>
+                            <Th></Th>
+                            <Th></Th>
+                            <Th></Th>
+                            <Th id="th">Monday.com Alternative</Th>
                             <Th></Th>
                         </Tr>
                     </Tbody>
@@ -142,33 +146,37 @@ export default function Footer() {
             <hr style={{ width: "86%", margin: "auto", marginTop: "30px"}} />
 
             <Box w={"85%"} p={7} m={"auto"}>
-                <HStack spacing='2px'>
+                <HStack>
                     <Box w='90px' h='10'>
                         <img width="80px" src="https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg" />
                     </Box>
-                    <Box w='360px' h='10'>
+                    <Box  w='360px' h='10'>
                         <Text color={"gray"}>2022 © Nifty Technologies, Inc. All rights reserved.</Text>
                     </Box>
+
                     <Spacer />
-                    <Box w='80px' h='10' >
-                        <Link>
-                        hi<img src=""/>
-                        </Link>
+    
+                    <Box w='40px' h='10' >
+                        <NavLink to="/https://www.facebook.com/nifty.pm/">
+                        <FaLinkedinIn id="icon" style={{fontSize:"24px",color:"gray"}}/>
+                        </NavLink>
                     </Box>
-                    <Box w='80px' h='10' >
-                    <Link>
-                        hi<img src=""/>
-                        </Link>
+
+                    <Box w='40px' h='10'>
+                        <NavLink to="/https://twitter.com/niftypm">
+                        <FaFacebook id="icon" style={{fontSize:"24px",color:"gray"}}/>
+                        </NavLink>
                     </Box>
-                    <Box w='80px' h='10'>
-                        <Link>
-                        hi<img src=""/>
-                        </Link>
+                    
+                    <Box w='40px' h='10'>
+                        <NavLink to="/https://twitter.com/niftypm">
+                        <FaTwitter id="icon" style={{fontSize:"24px",color:"gray"}}/>
+                        </NavLink>
                     </Box>
                 </HStack>
             </Box>
 
-
+            <FaFacebook  style={{fontSize:"24px",color:"gray"}}/>
         </Box>
     )
 }
