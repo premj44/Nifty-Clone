@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.box1 {
+  background: #fff;
+}
+
+.img1 {
+ 
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.imgtext{
+  font-size: 14px;
+  font-weight: 600;
+font-family: Inter,sans-serif;
+}
+.img1:hover{
+  margin-top: -2px;
+  cursor: pointer;
+}

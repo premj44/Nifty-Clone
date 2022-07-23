@@ -73,3 +73,7 @@
 #navhover:hover{
   color: #00baab;
 }
+
+.mainbox:hover{
+  cursor: pointer;
+}

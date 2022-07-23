@@ -143,40 +143,41 @@ export default function Footer() {
                 </Table>
             </TableContainer>
 
-            <hr style={{ width: "86%", margin: "auto", marginTop: "30px"}} />
+            <hr style={{ width: "86%", margin: "auto", marginTop: "30px" }} />
 
             <Box w={"85%"} p={7} m={"auto"}>
                 <HStack>
                     <Box w='90px' h='10'>
                         <img width="80px" src="https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg" />
                     </Box>
-                    <Box  w='360px' h='10'>
+                    <Box w='360px' h='10'>
                         <Text color={"gray"}>2022 © Nifty Technologies, Inc. All rights reserved.</Text>
                     </Box>
 
                     <Spacer />
-    
-                    <Box w='40px' h='10' >
-                        <NavLink to="/https://www.facebook.com/nifty.pm/">
-                        <FaLinkedinIn id="icon" style={{fontSize:"24px",color:"gray"}}/>
-                        </NavLink>
+                    
+                    
+                    <Box w='40px' h='10'>
+                        <a href="https://www.linkedin.com/company/nifty-project-management"><FaLinkedinIn id="icon" style={{ fontSize: "24px", color: "gray" }} /></a>
+
+
+                    </Box>
+                    {/* https://twitter.com/niftypm */}
+                    <Box w='40px' h='10'>
+                        <a href="https://www.facebook.com/nifty.pm"><FaFacebook id="icon" style={{ fontSize: "24px", color: "gray" }} /></a>
+
+
                     </Box>
 
                     <Box w='40px' h='10'>
-                        <NavLink to="/https://twitter.com/niftypm">
-                        <FaFacebook id="icon" style={{fontSize:"24px",color:"gray"}}/>
-                        </NavLink>
-                    </Box>
-                    
-                    <Box w='40px' h='10'>
-                        <NavLink to="/https://twitter.com/niftypm">
-                        <FaTwitter id="icon" style={{fontSize:"24px",color:"gray"}}/>
-                        </NavLink>
+                        <a href="https://twitter.com/niftypm"><FaTwitter id="icon" style={{ fontSize: "24px", color: "gray" }} /></a>
+
+
                     </Box>
                 </HStack>
             </Box>
 
-            <FaFacebook  style={{fontSize:"24px",color:"gray"}}/>
+            <FaFacebook style={{ fontSize: "24px", color: "gray" }} />
         </Box>
     )
 }

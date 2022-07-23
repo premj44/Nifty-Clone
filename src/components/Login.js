@@ -12,6 +12,7 @@ import {
     Spacer,
 } from '@chakra-ui/react'
 import { BsEmojiSmile } from "react-icons/bs";
+import { NavLink } from 'react-router-dom';
 
 
 export default function Login() {
@@ -19,9 +20,9 @@ export default function Login() {
     return (
         <Box  bgSize={"100%"} bgImage={"https://nifty.pm/static/media/waves-large@2x.0f45956af565d8c3dea9.png"}>
             <Box m={"auto"} w={950}>
-                <Center mb={"40px"}>
-                    <Image
-                        width="97px" marginTop="9px" src="https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg" />
+                <Center cursor={"pointer"} mb={"40px"}>
+                <NavLink to="/"><Image
+                        width="97px" marginTop="9px" src="https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg" /></NavLink>
                 </Center >
                 <Flex >
 

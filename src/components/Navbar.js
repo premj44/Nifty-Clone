@@ -20,8 +20,8 @@ export default function Navbar() {
         <>
             <Box bg={"#fcfdfe"} >
                 <Box style={{ display: "flex", width: "90%", margin: "auto", height: "70px" }}>
-                    <Box style={{ marginTop: "18px" }}>
-                        <img width="90px" src="https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg" />
+                    <Box style={{ marginTop: "18px",cursor:"pointer" }}>
+                    <NavLink to="/"><img width="90px" src="https://niftypm.com/_nuxt/img/nifty-logo.eab2f7a.svg" /></NavLink>
                     </Box>
                     <Spacer />
                     <Box  style={{ display: "flex", fontWeight: "500", marginTop: "18px" }} >
@@ -33,7 +33,7 @@ export default function Navbar() {
                         
                         <Box id="navhover" ml={10}><NavLink to="/apps">Got Clients?</NavLink></Box>
 
-                        <Box id="navhover" ml={10} ><NavLink to="/apps">Pricing</NavLink></Box>
+                        <Box id="navhover" ml={10} ><NavLink to="/blog">Pricing</NavLink></Box>
                         <Box ml={10} color={"#00baab"}>Get a Demo</Box>
                     </Box>
                     <Spacer />
