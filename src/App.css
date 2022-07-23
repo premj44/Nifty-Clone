@@ -77,3 +77,6 @@
 .mainbox:hover{
   cursor: pointer;
 }
+.pbtn:hover{
+  color: #00baab;
+}

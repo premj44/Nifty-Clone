@@ -25,15 +25,15 @@ export default function Navbar() {
                     </Box>
                     <Spacer />
                     <Box  style={{ display: "flex", fontWeight: "500", marginTop: "18px" }} >
-                        <Box id="navhover" ml={20}><NavLink to="/apps">Features</NavLink></Box>
+                        <Box id="navhover" ml={20}><NavLink to="/">Features</NavLink></Box>
 
-                        <Box id="navhover" ml={10}><NavLink to="/apps">Use Cases</NavLink></Box>
+                        <Box id="navhover" ml={10}><NavLink to="/apps">Apps</NavLink></Box>
 
-                        <Box id="navhover" ml={10}><NavLink to="/apps">Resources</NavLink></Box>
+                        <Box id="navhover" ml={10}><NavLink to="/blog">Blog</NavLink></Box>
                         
-                        <Box id="navhover" ml={10}><NavLink to="/apps">Got Clients?</NavLink></Box>
+                        <Box id="navhover" ml={10}><NavLink to="/">Got Clients?</NavLink></Box>
 
-                        <Box id="navhover" ml={10} ><NavLink to="/blog">Pricing</NavLink></Box>
+                        <Box id="navhover" ml={10} ><NavLink to="/">Pricing</NavLink></Box>
                         <Box ml={10} color={"#00baab"}>Get a Demo</Box>
                     </Box>
                     <Spacer />
