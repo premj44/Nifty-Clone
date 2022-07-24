@@ -80,3 +80,11 @@
 .pbtn:hover{
   color: #00baab;
 }
+.inputt{
+  width: 380px;
+  height: 40px;
+  border-radius: 7px;
+  background-color: #00baaa94;
+  color: white;
+  margin-bottom: 25px;
+}

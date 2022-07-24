@@ -11,14 +11,62 @@ import {
     Image,
     Spacer,
 } from '@chakra-ui/react'
+import { useContext, useState } from 'react';
 import { BsEmojiSmile } from "react-icons/bs";
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../AuthContext';
+import "../App.css"
 
 
 export default function Login() {
 
+    const [formData, setFormData] = useState({
+        email: "",
+        password: "",
+      });
+     
+      const isAuth = useContext(AuthContext)
+    
+      const navigate = useNavigate()
+    
+      const handleChange = (e) => {
+        const { name, value } = e.target;
+    
+        setFormData({
+          ...formData,
+          [name]: value,
+        });
+      };
+    
+      const handleSubmit = (e) => {
+        e.preventDefault();
+       
+        fetch("https://reqres.in/api/login", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            
+            alert("Login Succesfully");
+            isAuth.handleLogin(data.token)
+            navigate("/")
+          })
+          .catch((err) => {
+            console.log(err);
+            alert("Error");
+          });
+      };
+
+
+
+
     return (
         <Box  bgSize={"100%"} bgImage={"https://nifty.pm/static/media/waves-large@2x.0f45956af565d8c3dea9.png"}>
+            
             <Box m={"auto"} w={950}>
                 <Center cursor={"pointer"} mb={"40px"}>
                 <NavLink to="/"><Image
@@ -44,23 +92,24 @@ export default function Login() {
                             <Text color={"blackAlpha.800"} fontSize={"24px"} textAlign={"left"}>Log in to your account</Text>
                         </Box>
 
-
+                    <form width={"500px"} onSubmit={handleSubmit}>
                         <Box>
                             <Text textAlign={"left"}>Email Address *</Text>
-                            <Input type="email" placeholder="add email" />
+                            <Input mb={"5"} type="email" name='email' onChange={handleChange} value={formData.email} placeholder="add email" />
                         </Box>
                         <Box>
                             <Flex >
                                 <Text>Password *</Text> <Spacer />  <Text>Forgot password ?</Text>
                             </Flex>
-                            <Input type="password" placeholder="add password" />
+                            <Input mb={"5"} type="password" name='password'  onChange={handleChange} value={formData.password} placeholder="add password" />
                         </Box>
 
                         <Box>
-                            <Button bg='#80dbd4' color={"white"} w={400} m={"auto"}>
-                                Log in
-                            </Button>
+                        <input className='inputt' width={"500px"} type="submit" value="Log in" bg='#80dbd4' color={"white"} w={500} m={"auto"}/>
+                                
+                           
                         </Box>
+                    </form>
                         <Center>
                             <Stack direction={'column'} spacing='12px'>
                                 <Button bg='white' color="orange" w={200} m={"auto"}>
@@ -87,6 +136,7 @@ export default function Login() {
 
                 </Flex>
             </Box>
+            
         </Box>
     );
 };
